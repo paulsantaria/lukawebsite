@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
 
     $mailTo = "hey@lukaymedia.com";
     $headers = "From: ".$email;
-    $txt = "Nombre: ".$name."\n\n".$porque;
+    $txt = "Nombre: ".$name.".\n\n".$porque;
     $asunto = "Postulacion de ".$name;
 
 

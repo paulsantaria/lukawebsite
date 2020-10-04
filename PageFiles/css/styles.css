@@ -110,8 +110,13 @@ li{
     fill: #3c3c3b;
     
 }
-
-
+/*for aditional pages*/
+.logoOn #logo{
+    fill: #3c3c3b;
+}
+.logoOn .menu-icon-box span{
+    background: #3c3c3b;
+}
 /*end*/
 .menu-icon{
     height: 30px;
@@ -160,7 +165,7 @@ li{
     top: 0;
     bottom: 0;
     width: 50%;
-    height: 100vh;
+    /*height: 100vh;*/
     background: #3c3c3b;
     transition: .5s ease-out;    
     display: flex;
@@ -205,6 +210,7 @@ li{
 }
 
 /*caja menu*/
+
 .open{
     right:0!important;
 }
@@ -216,7 +222,7 @@ li{
     top: 0;
     bottom: 0;
     width: 50%;
-    height: 100vh;
+    /*height: 100vh;*/
     background: #f5f5f5;
     transition: .5s ease-out;    
     display: flex;
@@ -289,7 +295,7 @@ li{
 /*caja top*/
 .top{
     height: 100vh;
-    display: block;
+    width: 100%;
     
 }
 
@@ -327,78 +333,148 @@ li{
     line-height: 1.1;
     color: white!important;
 }
-/*pics caja <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-.pics{
-    padding: 12rem 0;
+/*landing styles <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*no styles*/
+.landing-content{
     background: #f5f5f5;
-}
-.pics-box{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.pics-box  div{
-    height: 200px;
-    width: 200px;
-    background-size: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.pics-box div p{
-    font-size: 1rem;
-    font-weight: 700;
-}
-.pic1{
-    background: url(../img/somos-big.jpg);
-}
-.pic2{
-    background: url(../img/somos-big.jpg);
-}
-.pic3{
-    background: url(../img/somos-big.jpg);
-}
-.pic4{
-    background: url(../img/somos-big.jpg);
-}
-.pic5{
-    background: url(../img/somos-big.jpg);
-}
-.pic6{
-    background: url(../img/somos-big.jpg);
-}
-.pic7{
-    background: url(../img/somos-big.jpg);
-}
-.pic8{
-    background: url(../img/somos-big.jpg);
-}
-.pic9{
-    background: url(../img/somos-big.jpg);
-}
-.pic10{
-    background: url(../img/somos-big.jpg);
-}
-.pic11{
-    background: url(../img/somos-big.jpg);
-}
-.pic12{
-    background: url(../img/somos-big.jpg);
+    overflow: hidden;
 }
 
-.pics-box div:hover{
+.landing-box{
+    max-width:1080px ;
+    margin: 0 auto;
+    padding: 5rem 0;
+    position:relative;
+    display: flex;
+}
+.landing{
+    position: relative;
+}
+.landing-img{
+    position: relative;
+    width: 35%;
+}
+.landingFloat{
+    position: absolute;
+}
+.landingFloat img{
+    box-shadow: 50px 50px 80px rgba(110, 123, 129, 0.25);
+}
+.one{
+    top: 60px;
+    left: 51px;
+}
+.two{
+    top: 89px;
+    right: -78px;
+} 
+.three{
+    right: 62px;
+    top: 185px;
+}
+.four{
+    top: -130px;
+    right: -117px;
+}
+.five{
+    top: -55px;
+    left: -51px;
+}
+.six{
+    right: 150px;
+    top: 180px;
+}
+.one img{
+    width: 80px;
+}
+.two img{
+    width: 100px;
+}
+.three img{
+    width: 150px;
+}
+.four img{
+    width: 280px;
+}
+.five img{
+    width: 110px;
+}
+.six img{
+    width: 140px;
+}
+.landing h2{
+    font-size: calc(2.3rem + 1vw);
+    line-height: 1.3;
+    font-weight: 800;
+    color: #3c3c3b;;
+}
+.landing p{
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+    margin: 2.5rem 0 2rem;
+    color: #3c3c3b;
+}
+.landing a {
+    z-index: 1;
+}
+.landing-divider{
+    position: relative;
+    width: 10%;
+    left: -4%;
+    height: 8px;
+    background: #ffe152;
+    margin: 2rem 0;
+}
+.landing a:after{
+    content: '';
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    background: #3c3c3b;
+    left: 0;
     transition: all 0.5s ease-in-out;
-    background-color: #ffe152;
-    background-blend-mode: multiply;
+    z-index: -1;
+}
+.landing a:hover:after{
+    width: 100%;
+}
+.landing a:hover{
+    color: #ffe152;
+}
+.landing-box-in{
+    width: 65%;
 }
 
-/*pics ends <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.listo {
+    padding-top: 10rem;
+}
+/*revision landing*/
+.rev-dark-bg{
+    width: 65%;
+    height: 100%;
+    background: #3c3c3b;
+    position: absolute;
+}
+.landing-box-rev{
+    width: 50%;
+    padding: 5rem 0;
+}
 
-/*caja footer*/
+.landing-box-rev p{
+    color: white!important;
+}
+.landing-box-rev h2{
+    color: white!important;
+}
+.landing-box-rev label{
+    color: white!important;
+}
+.landing-box-rev span{
+    color: white!important;
+}
+/*caja footer<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 .footer{
-    height: 85vh;
     background:#3c3c3b ;
     display: flex;
     align-items: center;
@@ -407,6 +483,8 @@ li{
     max-width: 800px;
     margin: 0 auto;
     width: 100%;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
 }
 .footer-divider{
     width: 14%;
@@ -482,6 +560,44 @@ li{
     background: #f5f5f5;
     padding: 12rem 1rem;
     position: relative;
+}
+.pageOption{
+    display: none;
+    margin-bottom: 2rem;
+    padding: 0 10px;
+}
+.pageOption select{
+    background-color: #ffe152;
+    color: #3c3c3b;
+    font-weight: 700;
+    font-size: inherit;
+    padding: 0.2em;
+    padding-right: 2.5em;
+    padding-left: 1.05em;
+    border: 0;
+    margin: 0;
+    text-indent: 0.01px;
+    border-radius: 0;
+    text-overflow: '';
+    -webkit-appearance: button;
+    outline: none;
+    cursor: pointer;
+    
+    font-family: 'Open Sans', sans-serif;
+}
+span.dropdown{
+    position: relative;
+}
+span.dropdown:after {
+    content: '+';
+    position: absolute;
+    font-size: 1.3rem;
+    color: #3c3c3b;
+    right: 1rem;
+    pointer-events: none;
+}
+.dropdown option{
+    font-size: 14px;
 }
 .do-text{
     width: 78%;
@@ -660,6 +776,7 @@ li{
 .doTag:hover{
     color: #3c3c3b!important;
 }
+
 /*fin estilo de pagina do <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*inicio estilo de pagina cultura <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -929,6 +1046,7 @@ li{
 .rev-form p {
     margin-bottom: 1rem;
     color: #292b2c;
+    font-size: 1.375rem;
 }
 .form-box-in li {
     margin-top: 8px;
@@ -1116,6 +1234,9 @@ textarea:focus {
         max-width: 540px;
     }
     /*hacemos querys*/
+    .pageOption{
+        display: block;
+    }
     .do{
         padding: 8rem 1rem;
         overflow: hidden;
@@ -1146,7 +1267,7 @@ textarea:focus {
         top: 70px;    
     }
     .upfloat img{
-        height: 180px;
+        height: 260px;
     }
     .leftfloat{
         display: none;
@@ -1256,9 +1377,10 @@ textarea:focus {
         height: 300px;
     }
     .footer-box{
-        padding: 0 2rem;
+        padding: 4rem 2rem;
     }
     /*hacemos querys*/
+    
     .do-box{
         padding: 0 15px;
     }
@@ -1328,9 +1450,9 @@ textarea:focus {
     }
     /*revision query*/
     .rev-form-box p{
-        font-size: 14px;
+        font-size: 18px;
     }
-
+    
 }
 
 /*end styles and querys*/
